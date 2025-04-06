@@ -1,37 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<html lang="es-mx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="Css/styles.css" />
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Calculadora de edad</title>
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Age calculator app</title>
+  <body onload="cargar()">
+    <h1 class="main_head">Calculadora de edad</h1>
+    <div class="contenedor">
+      <section class="input_user">
+        <div class="campo">
+          <label for="dia">Dia</label>
+          <br>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+          <input type="text" id="dia" name="dia" placeholder="DD" max="31" maxlength="2" />
+        </div>
+        <div class="campo">
+          <label for="mes">Mes</label>
+          <br>
+          <input type="text" id="mes" name="mes" placeholder="MM" max="31" maxlength="2" />
+        </div>
+        <div class="campo">
+          <label for="anio">Año</label>
+          <br>
+          <input type="text" id="anio" name="anio" placeholder="YYY"  max="9999" maxlength="4"/>
+        </div>
+      </section>
+      <h2>Tu edad calculada:</h2>
 
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <div class="middle">
+            <hr>
+              <img src="assets/images/icon-arrow.svg" alt="boton" onclick="conversion()" style="cursor: pointer;">
+            </div>
+      <section class="output_user">
+        <p class="dia">--<span>Dias</span></p>
+        <p class="mes">--<span>Mes</span></p>
+        <p class="anio">--<span>Años</span></p>
+       </section>
+    </div>
+    <p class="gratefoul">Creado con &#128420; por LuisD3v.</p>
+  </body>
 </html>
