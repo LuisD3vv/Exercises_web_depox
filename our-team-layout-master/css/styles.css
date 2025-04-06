@@ -1,0 +1,247 @@
+:root {
+  /* Colores */
+
+  --blanco: #fffefe;
+  --blanco-gris: #f3f4f6;
+  --gris-oscuro: #394150;
+  --negro: #000000;
+  --azul-oscuro: #263fa9;
+  --verde-agua: #86e7d4;
+  --azul-claro: #9dc4f8;
+  --lila: #c1b6f8;
+  --rosa: #edacd2;
+  --naranja-claro: #f8d8b0;
+
+  --fuentePrincipal: "Outfit", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: rgb(236, 228, 214);
+}
+.our {
+  color: #263fa9;
+}
+
+.contenedor {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 100rem;
+  margin: 10rem auto;
+  font-family: var(--fuentePrincipal);
+}
+
+.campo {
+  width: 25rem;
+  height: 25rem;
+  background-color: lightblue;
+}
+
+
+
+
+.campo:nth-child(1) {
+  border-top-left-radius: 30px;
+  background-image: url(../resources/Background_decor@2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+
+}
+.campo:nth-child(3) {
+  border-top-right-radius: 30px;
+}
+.campo:nth-child(4) {
+  border-bottom-left-radius: 30px;
+  background-repeat: no-repeat;
+background-size: contain;
+  background-image: url(../resources/Background_decor@2x.png);
+
+  
+}
+.campo:nth-child(7) {
+  border-bottom-right-radius: 30px;
+}
+
+.titulo {
+  width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: var(--blanco-gris);
+  background-image: url(../resources/);
+}
+
+.campo:nth-child(1) {
+  grid-column: 1 / span 2;
+}
+.liam {
+  background-color: var(--lila);
+  background-image: url(../resources/person_1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.sophia {
+  background-color: var(--rosa);
+  background-image: url(../resources/person_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.members {
+  background-color: var(--blanco-gris);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--gris-oscuro);
+}
+.members p {
+  width: 13rem;
+  margin: 22rem 3rem;
+  background-image: url(../resources/arrow\ up\ right.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  cursor: pointer;
+}
+.ethan {
+  background-color: var(--azul-claro);
+  background-image: url(../resources/person_3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.isabell {
+  background-color: var(--naranja-claro);
+  background-image: url(../resources/person_4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.noah {
+  background-color: var(--verde-agua);
+  background-image: url(../resources/person_5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.pers_desc {
+  margin: 20rem 1rem;
+  color: var(--negro);
+  line-height: 1rem;
+}
+.info {
+  margin-left: 2rem;
+}
+
+.nombre {
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 0px 0px 3px rgb(255, 255, 255);
+
+}
+.puesto {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  text-shadow: 0px 0px 10px black;
+}
+
+/*Media Queries*/
+
+@media (min-width: 336px) and (max-width: 780px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    margin-top: 0px;
+    box-shadow: unset;
+  }
+  .campo {
+    width: 95%;
+    margin: auto;
+  }
+  .campo:nth-child(1) {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    grid-column: 1/ 1;
+  }
+  .campo:nth-child(3) {
+    border-top-right-radius: 0px;
+  }
+  .campo:nth-child(4) {
+    border-bottom-left-radius: 0px;
+  }
+  .campo:nth-child(7) {
+    border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .info {
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+  }
+ 
+  .our{
+    text-decoration: none;
+
+   }
+
+}
+
+
+
+@media (min-width: 780px) and (max-width: 1140px) {
+    .contenedor {
+      grid-template-columns: 1fr 1fr;
+      margin-top: 0px;
+      width: 90%;
+      margin: auto;
+    }
+    .campo {
+      width: 100%;
+      width: 29rem;
+    }
+    .campo:nth-child(1) {
+      width: 100%;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+      grid-column: 1/ span 3;
+    }
+    .campo:nth-child(3) {
+      border-top-right-radius: 0px;
+    }
+    .campo:nth-child(4) {
+      border-bottom-left-radius: 0px;
+    }
+    .campo:nth-child(7) {
+      border-bottom-right-radius: 0px;
+      border-bottom-right-radius: 15px;
+    }
+    .campo:nth-child(5) {
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+      }
+  
+    .info {
+      text-align: center;
+      width: 95%;
+      margin: 0 auto;
+    }
+   
+    .our{
+      text-decoration: none;
+  
+     }
+  
+  }
+
