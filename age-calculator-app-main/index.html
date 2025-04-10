@@ -20,39 +20,64 @@
     <title>Calculadora de edad</title>
   </head>
 
-  <body onload="cargar()">
+  <body>
     <h1 class="main_head">Calculadora de edad</h1>
     <div class="contenedor">
+      <h1 class="nacimiento">Ingresa tu fecha de nacimiento</h1>
       <section class="input_user">
         <div class="campo">
           <label for="dia">Dia</label>
-          <br>
+          <br />
 
-          <input type="text" id="dia" name="dia" placeholder="DD" max="31" maxlength="2" />
+          <input
+            type="number"
+            id="dia"
+            name="dia"
+            placeholder="DD"
+            max="31"
+            min="1"
+          />
         </div>
         <div class="campo">
           <label for="mes">Mes</label>
-          <br>
-          <input type="text" id="mes" name="mes" placeholder="MM" max="31" maxlength="2" />
+          <br />
+          <input
+            type="number"
+            id="mes"
+            name="mes"
+            placeholder="MM"
+            max="31"
+            min="1"
+          />
         </div>
         <div class="campo">
           <label for="anio">Año</label>
-          <br>
-          <input type="text" id="anio" name="anio" placeholder="YYY"  max="9999" maxlength="4"/>
+          <br />
+          <input
+            type="number"
+            id="anio"
+            name="anio"
+            placeholder="YYYY"
+            max="9999"
+            min="1"
+          />
         </div>
       </section>
-      <h2>Tu edad calculada:</h2>
-
-          <div class="middle">
-            <hr>
-              <img src="assets/images/icon-arrow.svg" alt="boton" onclick="conversion()" style="cursor: pointer;">
-            </div>
+      <div class="middle">
+        <p>Calcula tu edad -> </p>
+        <button onclick="conversion()">
+          <img src="assets/images/icon-arrow.svg" alt="boton" />
+        </button>
+      </div>
+      <hr />
+      <h2 class="ctually">Tienes actualmente:</h2>
       <section class="output_user">
-        <p class="dia">--<span>Dias</span></p>
-        <p class="mes">--<span>Mes</span></p>
-        <p class="anio">--<span>Años</span></p>
-       </section>
+        <p id="anio_output">--<span>Años</span></p>
+        <p id="mes_output">--<span>Mes</span></p>
+
+        <p id="dia_output">--<span>Dias</span></p>
+      </section>
     </div>
-    <p class="gratefoul">Creado con &#128420; por LuisD3v.</p>
+    <p class="gratefoul">Creado con &#128420; por LissandroD3v.</p>
   </body>
 </html>

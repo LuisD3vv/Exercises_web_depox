@@ -16,7 +16,6 @@
 
   --FuentePrincipal: "Poppins", sans-serif;
 }
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -26,75 +25,81 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
 Body {
   background-color: rgb(219, 225, 230);
   font-family: var(--FuentePrincipal);
 }
-
 .contenedor {
   background-color: var(--White);
   margin: 7rem auto;
   width: 50rem;
-  height: 40rem;
-  border-radius: 15px;
-  border-bottom-right-radius: 10rem;
-  box-shadow: 0px 0px 5px 4px black;
+  height: 43rem;
+  border-radius: 20px;
+  border-bottom-right-radius: 15rem;
+  box-shadow: 0px 0px 3px 4px black;
+}
+.nacimiento{
+letter-spacing: 5px;
+  text-align: center;
+  padding: .5rem;
+  background-color: var(--Purple_500);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  text-shadow: 0px 0px 1px rgb(137, 21, 172);
+
 }
 .input_user {
-  margin: auto 1rem;
+  margin-top: -2rem;
   display: flex;
   padding: 1rem;
   width: 80%;
   gap: 20px;
 }
-
 .campo label {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 11px;
   color: var(--Grey_500);
 }
-
 .campo input {
-  width: 10rem;
+  width: 14rem;
   height: 4rem;
   font-weight: bold;
+  border-radius: 10px;
+  border-color: var(--Purple_500);
+  margin-bottom: 5px;
 }
 input:hover {
-  border-color: rgb(214, 71, 197);
+  border-color: rgb(0, 0, 0);
 }
 input:focus {
   border-top-left-radius: 10px;
   border-bottom-right-radius:  10px;
   border-top-right-radius:  10px;
-
-
 }
-hr {
-  margin-top: 2.3em;
-  width: 100%;
-  height: 1px;
-  color: rgb(0, 0, 0);
-}
+
 br {
   margin-bottom: 5px;
 }
-
 p {
   color: var(--Purple_500);
   font-size: 40px;
 }
-
+.ctually {
+  background-color: rgb(180, 166, 241);
+  width: 200px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 25px;
+}
 .output_user p {
   font-size: 60px;
   text-indent: 2rem;
   line-height: 1rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .output_user {
-  margin-top: 4rem;
-  height: auto;
+  margin-top: 3rem;
 }
 h2 {
   text-indent: 2rem;
@@ -104,15 +109,13 @@ h2 {
   background-color: rgb(59, 235, 49);
   width: 40rem;
   padding: 1rem;
-  margin: 3rem auto;
+  margin: 8rem auto;
   border-top-right-radius: 50px;
-border-bottom-left-radius: 52px;
+  border-bottom-left-radius: 52px;
   box-shadow: 0px 0px 1px 3px black;
-
 }
 h1 {
   text-shadow:  10px 101px 110px rgb(228, 219, 203);
-
 }
 span {
   color: black;
@@ -122,23 +125,30 @@ span {
   font-size: 15px;
 }
 .middle {
-  display: grid;
-  grid-template-columns: 90% 10%;
-  width: 90%;
+  display: flex;
+  width: auto;
+  height: 50px;
   gap: 5px;
-  margin: -2rem 1rem 1rem;
-}
-.middle p {
-  border-bottom: solid 2px black;
-  margin-bottom: 2rem;
+ text-align: center;
+ margin-top: -47px;
+ margin-bottom: 6rem;
+ margin-left: 1rem;
+
 }
 .middle img {
-  width: 50px;
+  width: 100%;
+  height: 50px;
   background-color: var(--Purple_500);
   border-radius: 50%;
 }
-
- img:hover {
-  border: 3px rgb(0, 0, 0) solid;
+button{
+  width: auto;
+  height: 50px;
+  border: none;
+margin: 4rem 10px; 
+background-color: white;
 }
-
+img:active {
+  box-shadow: 0px 0px 3px 3px rgb(8, 201, 50);
+  margin-top: 2px;
+}
