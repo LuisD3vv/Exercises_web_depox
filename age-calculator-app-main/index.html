@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <h1 class="main_head">Calculadora de edad</h1>
+    <div class="atras"><h1 class="main_head">Calculadora de edad</h1></div>
     <div class="contenedor">
       <h1 class="nacimiento">Ingresa tu fecha de nacimiento</h1>
       <section class="input_user">
@@ -64,8 +64,8 @@
         </div>
       </section>
       <div class="middle">
-        <p>Calcula tu edad -> </p>
-        <button onclick="conversion()">
+        <p>Calcula tu edad-></p>
+        <button id="validarInputs" onclick="conversion()">
           <img src="assets/images/icon-arrow.svg" alt="boton" />
         </button>
       </div>
@@ -74,7 +74,6 @@
       <section class="output_user">
         <p id="anio_output">--<span>Años</span></p>
         <p id="mes_output">--<span>Mes</span></p>
-
         <p id="dia_output">--<span>Dias</span></p>
       </section>
     </div>

@@ -26,30 +26,33 @@ html {
   box-sizing: inherit;
 }
 Body {
-  background-color: rgb(219, 225, 230);
+  background-color: azure;
   font-family: var(--FuentePrincipal);
 }
 .contenedor {
   background-color: var(--White);
-  margin: 7rem auto;
-  width: 50rem;
-  height: 43rem;
+  margin: 1rem auto;
+  width: 55rem;
+  height: 50rem;
   border-radius: 20px;
-  border-bottom-right-radius: 15rem;
-  box-shadow: 0px 0px 3px 4px black;
+  border-bottom-right-radius: 10rem;
+  box-shadow: 0px 0px 5px 2px rgb(146, 12, 146);  
 }
 .nacimiento{
-letter-spacing: 5px;
+  text-transform: uppercase;
+ letter-spacing: 4.5px;
   text-align: center;
   padding: .5rem;
-  background-color: var(--Purple_500);
+  background-color: rgb(169, 107, 228);
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  text-shadow: 0px 0px 1px rgb(137, 21, 172);
-
+  background: linear-gradient(to right, #ff7e5f, #960dcc); /* Degradado */
+  -webkit-background-clip: text; /* Crucial para el efecto */
+  color: transparent; /* Hacemos el color de texto transparente */
+  background-clip:0 ;
 }
 .input_user {
-  margin-top: -2rem;
+  margin-top: -1rem;
   display: flex;
   padding: 1rem;
   width: 80%;
@@ -57,12 +60,13 @@ letter-spacing: 5px;
 }
 .campo label {
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   font-size: 11px;
   color: var(--Grey_500);
+  margin-left: 4px;
 }
 .campo input {
-  width: 14rem;
+  width: 16rem;
   height: 4rem;
   font-weight: bold;
   border-radius: 10px;
@@ -77,48 +81,65 @@ input:focus {
   border-bottom-right-radius:  10px;
   border-top-right-radius:  10px;
 }
-
 br {
   margin-bottom: 5px;
 }
 p {
   color: var(--Purple_500);
+}
+
+.middle p {
+  color: var(--Purple_500);
   font-size: 40px;
 }
 .ctually {
-  background-color: rgb(180, 166, 241);
-  width: 200px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  height: 25px;
+  font-family: var(--FuentePrincipal);
+  width: 400px;
+  border-radius: 5px;
+  font-size: 19px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 2px rgb(255, 255, 255);
 }
 .output_user p {
   font-size: 60px;
   text-indent: 2rem;
   line-height: 1rem;
-  margin-top: 1.5rem;
+  margin-left: -70px;
+  margin-bottom: 4rem;
 }
 .output_user {
-  margin-top: 3rem;
+  width: 35rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin-left: 6rem;
+  margin-top: -3rem;
 }
 h2 {
   text-indent: 2rem;
 }
-.main_head {
-  text-align: center;
-  background-color: rgb(59, 235, 49);
+.atras {
+  margin: 3rem auto;
+border-radius: 15px;
   width: 40rem;
+}
+.main_head {
+  font-size: 3rem;
+  text-align: center;
+  width: 35rem;
   padding: 1rem;
-  margin: 8rem auto;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 52px;
-  box-shadow: 0px 0px 1px 3px black;
+  margin: 3rem auto;
+  background: linear-gradient(to right, #1af53f, #aa13e6); /* Degradado */
+  -webkit-background-clip: text; /* Crucial para el efecto */
+  color: transparent; /* Hacemos el color de texto transparente */
+  background-clip:0 ;
 }
 h1 {
-  text-shadow:  10px 101px 110px rgb(228, 219, 203);
+  text-shadow:  10px 101px 110px rgb(0, 0, 0);
 }
 span {
-  color: black;
+  color: rgb(0, 0, 0);
+  letter-spacing: 5px;
 }
 .gratefoul {
   text-align: center;
@@ -126,14 +147,12 @@ span {
 }
 .middle {
   display: flex;
-  width: auto;
+  align-items: center;
+  justify-content: space-around;
   height: 50px;
   gap: 5px;
- text-align: center;
- margin-top: -47px;
- margin-bottom: 6rem;
- margin-left: 1rem;
-
+  text-align: center;
+  margin-left: 1rem;
 }
 .middle img {
   width: 100%;
@@ -141,14 +160,16 @@ span {
   background-color: var(--Purple_500);
   border-radius: 50%;
 }
-button{
-  width: auto;
-  height: 50px;
+button {
+  width: 60px;
+  height: 60px;
   border: none;
-margin: 4rem 10px; 
-background-color: white;
+background-color: transparent;
+}
+img:hoover {
+  border-color: red
 }
 img:active {
-  box-shadow: 0px 0px 3px 3px rgb(8, 201, 50);
+  box-shadow: 0px 0px 3px 3px rgb(224, 10, 189);
   margin-top: 2px;
 }

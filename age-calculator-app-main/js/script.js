@@ -1,15 +1,26 @@
+
 function conversion() {
     // Obtener los valores de los inputs
+
     let dia_b = document.getElementById("dia").value;
     let mes_b = document.getElementById("mes").value;
     let anio_b = document.getElementById("anio").value;
-  
+    
+    
     // Asegurarse de que los campos no estén vacíos
     if (!dia_b || !mes_b || !anio_b) {
-      alert("Por favor ingresa todos los datos.");
+      alert("Por favor ingresa todos los datos.")
       return;
     }
-  
+    else if (dia_b > 31 || mes_b > 12 || anio_b > 3000) {
+      alert("porfavor, ingresa correctamente los datos solicitados.");
+      return;
+    }
+    else if (dia_b < 0 || mes_b < 0  || anio_b < 0 ) {
+      alert("Los datos no deben de ser negativos");
+      return;
+    }
+
     // Convertir las entradas a números
     dia_b = parseInt(dia_b);
     mes_b = parseInt(mes_b);
@@ -42,3 +53,31 @@ function conversion() {
     document.getElementById("mes_output").innerHTML = `${edad_meses} <span>Meses</span>`;
     document.getElementById("anio_output").innerHTML = `${edad_anios} <span>Años</span>`;
   }
+
+
+
+
+// Imagina que quieres calcular cuántos días has vivido si tu cumpleaños es el 15 de julio de 1995.
+
+// Pasos:
+
+//     Usa la fecha actual para calcular cuántos años han pasado desde tu cumpleaños.
+
+//     Convierte esos años a meses y días (supón que un año tiene 365 días).
+
+//     Muestra un mensaje que diga:
+//     "Desde tu cumpleaños el 15 de julio de 1995, has vivido X años, Y meses y Z días."
+
+// Pistas:
+
+//     Puedes usar new Date() para obtener la fecha actual.
+
+//     Para calcular los años transcurridos, puedes restar el año de tu cumpleaños al año actual.
+
+//     Para obtener los meses y los días, haz las conversiones apropiadas usando los cálculos.
+
+// Ejemplo de salida:
+
+// Desde tu cumpleaños el 15 de julio de 1995, has vivido 30 años, 7 meses y 15 días.
+
+// ¡Hazlo paso a paso y usa las plantillas literales para formatear la cadena!
